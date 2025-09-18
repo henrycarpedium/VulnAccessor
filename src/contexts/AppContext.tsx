@@ -202,7 +202,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       auditLogs: state.auditLogs,
       notifications: state.notifications
     };
-    localStorage.setItem('vulnerAccessor_state', JSON.stringify(stateToSave));
+    localStorage.setItem('vulneraX_state', JSON.stringify(stateToSave));
   }, [state.domains, state.vulnerabilities, state.scans, state.auditLogs, state.notifications]);
 
   const actions = {
