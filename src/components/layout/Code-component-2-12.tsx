@@ -78,7 +78,7 @@ export function DashboardLayout({
             <div className="flex items-center gap-2">
               <Shield className="h-8 w-8 text-primary" />
               <div>
-                <h1 className="text-xl font-bold">VulnerAccessor</h1>
+                <h1 className="text-xl font-bold">VulneraX</h1>
                 <p className="text-xs text-muted-foreground">Security Risk Management</p>
               </div>
             </div>
