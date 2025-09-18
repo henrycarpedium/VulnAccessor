@@ -176,7 +176,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
 
   // Load persisted data on mount
   useEffect(() => {
-    const savedState = localStorage.getItem('vulnerAccessor_state');
+    const savedState = localStorage.getItem('vulneraX_state');
     if (savedState) {
       try {
         const parsed = JSON.parse(savedState);
@@ -202,7 +202,7 @@ export function AppProvider({ children }: { children: React.ReactNode }) {
       auditLogs: state.auditLogs,
       notifications: state.notifications
     };
-    localStorage.setItem('vulnerAccessor_state', JSON.stringify(stateToSave));
+    localStorage.setItem('vulneraX_state', JSON.stringify(stateToSave));
   }, [state.domains, state.vulnerabilities, state.scans, state.auditLogs, state.notifications]);
 
   const actions = {
